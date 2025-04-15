@@ -165,8 +165,8 @@ foreach ($result as $row) {
         <thead>
             <tr>
                 <th>Nama Produk</th>
-                <th>Harga</th>
-                <th>Stok</th>
+                <th>Harga Produk/Pack</th>
+                <th>Produk Terjual</th></th>
                 <th>Subtotal</th>
                 <th>Tanggal Penjualan</th>
                 <th>Nama Toko</th>
