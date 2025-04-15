@@ -14,6 +14,8 @@ include "koneksi.php";
     <style>
         body {
             background-color: #80B9AD; /* Warna latar belakang utama */
+            padding-top: 100px; /* Padding untuk navbar */
+            font-family: 'Arial', sans-serif; /* Font umum */
         }
         .container {
             max-width: 800px;
@@ -95,7 +97,7 @@ include "koneksi.php";
 
             <div class="form-group">
                 <label for="NamaProduk">Nama Produk:</label>
-                <input type="text" id="NamaProduk" name="NamaProduk" class="form-control" required>
+                <input type="text" id="NamaProduk" name="NamaProduk/pack" class="form-control" required>
             </div>
 
             <div class="form-group">
