@@ -18,6 +18,9 @@ $barang = mysqli_fetch_assoc($result);
     <style>
         body {
             background-color: #80B9AD; /* Warna latar belakang utama */
+            padding-top: 100px; /* Padding untuk navbar */
+            font-family: 'Arial', sans-serif; /* Font umum */
+
         }
         .container {
             max-width: 800px;
@@ -35,6 +38,11 @@ $barang = mysqli_fetch_assoc($result);
         .header {
             background-color: #538392; /* Warna latar belakang header */
             padding: 20px;
+            position: fixed; /* Navbar tetap di atas */
+            top: 0; /* Menempelkan navbar ke bagian atas viewport */
+            left: 0; /* Memastikan navbar membentang dari kiri */
+            width: 100%; /* Memastikan navbar membentang selebar viewport */
+            z-index: 1000; /* Memastikan navbar berada di atas konten lain */
         }
         .nav-link {
             color: #EBE5C2; /* Warna teks tautan navigasi */
@@ -92,7 +100,7 @@ $barang = mysqli_fetch_assoc($result);
             </div>
 
             <div class="form-group">
-                <label for="NamaProduk">Nama Produk:</label>
+                <label for="NamaProduk">Nama Produk/Pack:</label>
                 <input type="text" name="NamaProduk" class="form-control" value="<?php echo $barang['NamaProduk']; ?>" required>
             </div>
 
