@@ -240,7 +240,7 @@ $found = !empty($result);
         <tr>
             <th>No</th>
             <th>Nama Produk</th>
-            <th>Harga Produk</th>
+            <th>Harga Produk/Pack</th>
             <th>Stok</th>
             <th>Tanggal Masuk</th>
             <th>AKSI</th>
