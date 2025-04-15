@@ -34,6 +34,8 @@ $result_semua_toko = $koneksi->query($sql_semua_toko);
     <style>
         body {
             background-color: #80B9AD; /* Warna latar belakang utama */
+            padding-top: 100px; /* Padding untuk navbar */
+            font-family: 'Arial', sans-serif; /* Font umum */
         }
         .container {
             max-width: 800px;
@@ -51,6 +53,12 @@ $result_semua_toko = $koneksi->query($sql_semua_toko);
         .header {
             background-color: #538392; /* Warna latar belakang header */
             padding: 20px;
+            position: fixed; /* Navbar tetap di atas */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan pada navbar */
         }
         .nav-link {
             color: #EBE5C2; /* Warna teks tautan navigasi */
@@ -112,12 +120,12 @@ $result_semua_toko = $koneksi->query($sql_semua_toko);
         </div>
 
         <div class="form-group">
-            <label for="Harga">Harga Produk:</label>
+            <label for="Harga">Harga Produk/Pack:</label>
             <input type="number" id="Harga" name="Harga" class="form-control" value="<?= $barang ? $barang['Harga'] : '' ?>" required readonly>
         </div>
 
         <div class="form-group">
-            <label for="Stok">Stok:</label>
+            <label for="Stok">Jumlah Produk:</label>
             <input type="number" id="Stok" name="Stok" class="form-control" oninput="validasiStok()">
         </div>
 
